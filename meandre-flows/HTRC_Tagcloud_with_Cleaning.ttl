@@ -1,0 +1,2559 @@
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/19>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/read-text/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/csv-to-tuple/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "361"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "446"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/9>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/token-counts-to-csv/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/write-to-file/input/data> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "push_text_2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/push-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/message> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "token_counts_to_csv"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/token-counts-to-csv> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/ordered> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/separator> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/delimiter_replacement> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/header> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/retry_delay>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "retry_delay"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1000"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/height>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "height"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1000"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "383"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/message>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "message"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "tagcloudcleantokencounts.html"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "30"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "14"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/template>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "template"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "org/seasr/meandre/components/vis/d3/TagCloud.vm"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "263"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "139"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/separator>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "separator"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              " "^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "365"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "8"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/30>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/htrc/htrc-page-retriever/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/text-cleaner/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/n_top_tokens>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "n_top_tokens"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "200"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "349"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/delimiter>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "delimiter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "|"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/8>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/text-accumulator/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/stream-delimiter-filter/input/object> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "202"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_username>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_username"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "lauvil"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "198"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/param_name>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "param_name"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "stopwords_list_english_url"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "285"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/wrap_stream>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wrap_stream"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/d3_api_url>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "d3_api_url"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "http://d3js.org/d3.v2.min.js"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "553"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "2"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "182"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/33>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/opennlp-tokenizer/output/tokens> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/token-filter/input/tokens_blacklist> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "token_counter_reducer"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/token-counter-reducer> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/ordered> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/_stream_id> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "flow_parameter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/flow-parameter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/wrap_stream> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/param_name> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/default_value> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/append_timestamp>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "append_timestamp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/7>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/push-text/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/write-to-file/input/location> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/count>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "count"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "10"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/connection_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "connection_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/param_name>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "param_name"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "replacement_rules_url"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/color_palette>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "color_palette"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "category20"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "510"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "111"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_password>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_password"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "14uv11.u1uc"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/message>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "message"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ", . ; : ? { } [ ] ( ) | - _ / \\\\ $ ! ' ` -- \\u201D \\u2019 \\\" ~ @ # % ^ & * + = \\u2014"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "flow_parameter_3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/flow-parameter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/param_name> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/wrap_stream> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/default_value> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/advanced_filter>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "advanced_filter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_token>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_token"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "a6fa7057bfa0e5a9a33411e41ca9bc69"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/6>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/csv-to-tuple/output/tuples> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/tuple-value-to-string/input/tuples> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "191"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/42>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/token-filter/output/token_counts> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/token-counter-reducer/input/token_counts> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "651"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/font_name>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "font_name"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "539"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/title>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "title"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "Tag Cloud"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "840"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "6"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "421"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "432"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/default_folder>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "default_folder"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "/tmp"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/wrap_stream>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wrap_stream"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "116"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/wrap_stream>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wrap_stream"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/default_value>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "default_value"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "/home/lauvil/HTRC/data/volume_id.txt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "18"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/replace>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/read_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "read_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/>
+      a       <http://www.meandre.org/ontology/flow_component> ;
+      <http://purl.org/dc/elements/1.1/creator>
+              "admin"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://purl.org/dc/elements/1.1/date>
+              "2013-08-27T20:33:11"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://purl.org/dc/elements/1.1/description>
+              "<br>"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://purl.org/dc/elements/1.1/rights>
+              "UIUC/NCSA Open Source License"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/components_instances>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/components/set> ;
+      <http://www.meandre.org/ontology/connectors>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/set> ;
+      <http://www.meandre.org/ontology/name>
+              "HTRC_Tagcloud_with_Cleaning"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/tag>
+              "tagcloud"^^<http://www.w3.org/2001/XMLSchema#string> , "htrc"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "flow_parameter_2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/flow-parameter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/wrap_stream> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/default_value> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/param_name> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/_stream_id> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/min_size>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "min_size"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "20"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/advanced_filter>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "advanced_filter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/append_timestamp>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "append_timestamp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/ignoreCase>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "ignoreCase"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/find3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "(?m)--?\\s*$\\s*"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/21>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/push-text/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/write-to-file/input/location> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/replace4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/header>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "header"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "tokens,counts"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "500"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "267"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "746"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "fork_x2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/fork-x2> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/replication_mode> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/replication_method_name> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/message>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "message"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "tagcloudcleantokencounts.csv"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/40>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/flow-parameter/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/universal-text-extractor/input/location> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "600"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/stream_per_volume>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "stream_per_volume"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "380"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "269"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "push_text"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/push-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/message> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/find2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/default_folder>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "default_folder"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "/tmp"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/append_data_to_file>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "append_data_to_file"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "write_to_file_2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/write-to-file> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/append_timestamp> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/append_data_to_file> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/default_folder> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/separator>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "separator"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ","^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/find4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "[^\\p{L}\\p{Z}\\p{S}\\p{N}\\p{P}]"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/replace3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "8"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "711"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "20"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/20>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/tuple-value-to-string/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/strings-to-java-string/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "Tuple Value To String"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/tuple-value-to-string> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/attribute> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "random_sample"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/random-sample> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/count> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/seed> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/find>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\n"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/replication_mode>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replication_mode"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "stream_delimiter_filter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/stream-delimiter-filter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/advanced_filter> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "3"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/read_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "read_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/connection_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "connection_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "345"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "531"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/components/set>
+      a       <http://www.meandre.org/ontology/instance_set> ;
+      <http://www.meandre.org/ontology/executable_component_instance>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/find3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/delimiter_replacement>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "delimiter_replacement"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\\\,"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "511"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/header>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "header"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/replace2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/replace>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/connection_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "connection_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/tokenizer_type>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "tokenizer_type"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "simple"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/ordered>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "ordered"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "universal_text_extractor_3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/universal-text-extractor> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/connection_timeout> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/read_timeout> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "127"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "htrc_page_retriever"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/htrc/htrc-page-retriever> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_password> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_token> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/read_timeout> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/delimiter> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/stream_per_volume> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_username> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_selfsign> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/connection_timeout> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/data_api_url> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_url> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/wrap_stream> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "186"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "text_accumulator"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/text-accumulator> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/separator> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/max_attempts>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "max_attempts"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/find2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "(.*)$"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_selfsign>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_selfsign"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/seed>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "seed"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "123"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "stream_delimiter_filter_2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/stream-delimiter-filter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/advanced_filter> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/find4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/retry_on_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "retry_on_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "99"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "tag_cloud"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/tag-cloud> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/force_positive> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/d3_cloud_api_url> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/width> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/font_name> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/min_size> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/title> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/css> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/show_tooltip> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/properties> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/height> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/show_counts> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/d3_api_url> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/color_palette> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/scale> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/max_size> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/template> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "15"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/bottom_n>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "bottom_n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/separator>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "separator"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\n"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/11>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/token-counter/output/token_counts> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/token-filter/input/token_counts> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/replication_method_name>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replication_method_name"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "concatenate_text"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/concatenate-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/separator> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "420"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/ordered>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "ordered"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/wrap_stream>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wrap_stream"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/1>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/stream-delimiter-filter/output/object> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/to-lowercase/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "9"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "99"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "token_counter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/token-counter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/ordered> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/auth_url>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_url"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "https://silvermaple.pti.indiana.edu:25443/oauth2/token?grant_type=client_credentials"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/read_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "read_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/24>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/text-cleaner/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/search-text/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/d3_cloud_api_url>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "d3_cloud_api_url"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "http://www.jasondavies.com/wordcloud/d3.layout.cloud.js"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/expression>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "expression"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "(?:[^|]+\\|?){1,4}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "503"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/wrap_stream>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wrap_stream"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/10>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/csv-to-tuple/output/meta_tuple> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/tuple-value-to-string/input/meta_tuple> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "text_replacement"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/text-replacement> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/ignoreCase> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/0>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/random-sample/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/text-cleaner/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "CSV To Tuple"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/csv-to-tuple> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/labels> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/header> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/separator>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "separator"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              " "^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/51>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/concatenate-text/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/opennlp-tokenizer/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "397"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/scale>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "scale"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "log"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/25>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/text-cleaner/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/text-accumulator/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "to_lowercase"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/to-lowercase> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "111"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/23>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/strings-to-java-string/output/java_string> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/random-sample/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "text_cleaner_2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/text-cleaner> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/find> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/find2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/replace> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/find4> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/find3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/replace3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/replace4> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/replace2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/13>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/trigger-message/output/object> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/text-replacement/input/mapdata> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/replace3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/css>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "css"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/replace4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/show_tooltip>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "show_tooltip"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "12"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/properties>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "properties"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/14>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/token-counter-reducer/output/token_counts> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/stream-delimiter-filter/input/object> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "499"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "token_filter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/token-filter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/replace> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/ignore_case> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "-1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/default_value>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "default_value"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "http://repository.seasr.org/Datasets/Text/common_words.txt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/52>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/push-text/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/concatenate-text/input/text2> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "103"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "99"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/22>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/flow-parameter/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/read-text/input/location> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/12>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/universal-text-extractor/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/trigger-message/input/object> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/width>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "width"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1000"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "481"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/replace2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/0/property/find>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "^(.*)\\s"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "99"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/param_name>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "param_name"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "volume_id"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "424"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "opennlp_tokenizer"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/opennlp-tokenizer> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/tokenizer_type> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "universal_text_extractor_2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/universal-text-extractor> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/read_timeout> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/connection_timeout> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/tokenizer_type>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "tokenizer_type"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "simple"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "push_text_3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/push-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/message> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/53>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/flow-parameter/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/universal-text-extractor/input/location> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_3> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/max_size>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "max_size"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "150"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "search_text"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/search-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/expression> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/wrap_stream> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "top_n_filter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/top-n-filter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/ordered> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/bottom_n> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/n_top_tokens> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "12"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "Strings To Java String"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/strings-to-java-string> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/separator> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/reset_on_push>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "reset_on_push"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "29"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "Read Text"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/read-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/connection_timeout> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/retry_delay> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/retry_on_timeout> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/read_timeout> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/max_attempts> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/retry_on_http_error> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/16>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/trigger-message/output/trigger> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/text-replacement/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/5>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/opennlp-tokenizer/output/tokens> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/token-counter/input/tokens> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counter/2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "421"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "231"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_3/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/random_sample/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "540"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "trigger_message"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/trigger-message> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message/property/reset_on_push> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter_2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "107"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "text_cleaner"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/text-cleaner> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/find2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/replace4> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/find> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/find3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/replace> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/find4> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/replace3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/replace2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter/property/default_value>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "default_value"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "http://repository.seasr.org/Datasets/Text/ngram_corrections.txt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/49>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/to-lowercase/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/trigger-message/input/trigger> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/trigger_message> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/strings-to-java-string/3/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/29>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/stream-delimiter-filter/output/object> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/top-n-filter/input/token_counts> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "283"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "138"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "708"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/data_api_url>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "data_api_url"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "https://sandbox.htrc.illinois.edu:25443/data-api"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/15>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/universal-text-extractor/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/concatenate-text/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/4>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/fork-x2/output/object2> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/token-counts-to-csv/input/token_counts> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token-counts-to-csv/1> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "297"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/concatenate_text/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "271"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/force_positive>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "force_positive"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_counter_reducer/property/ordered>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "ordered"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "18"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "22"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-cleaner/1/property/replace>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "|"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/set>
+      a       <http://www.meandre.org/ontology/connector_set> ;
+      <http://www.meandre.org/ontology/data_connector>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/19> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/33> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/23> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/7> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/13> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/9> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/11> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/28> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/14> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/1> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/18> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/16> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/5> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/21> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/3> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/52> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/24> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/30> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/40> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/6> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/22> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/12> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/42> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/8> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/49> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/10> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/29> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/0> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/2> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/51> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/4> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/15> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/53> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/17> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/20> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/25> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "opennlp_tokenizer_2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/opennlp-tokenizer> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/tokenizer_type> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/stream_delimiter_filter/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "507"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter/property/ordered>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "ordered"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/to_lowercase/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tuple-value-to-string/2/property/attribute>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "attribute"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "volume_id"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/28>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/search-text/output/text_found> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/htrc/htrc-page-retriever/input/volume_id_list> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/search_text> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/connection_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "connection_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/append_data_to_file>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "append_data_to_file"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/show_counts>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "show_counts"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/18>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/text-replacement/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/opennlp-tokenizer/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text-replacement/3> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp-tokenizer/1> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/token_filter/property/ignore_case>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "ignore_case"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/opennlp_tokenizer_2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/3>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/fork-x2/output/object> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/tag-cloud/input/token_counts> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/read_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "read_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "write_to_file_3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/write-to-file> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/default_folder> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/append_data_to_file> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/append_timestamp> , <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write-to-file/3/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/csv-to-tuple/1/property/labels>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "labels"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "volume_id"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push-text/2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/htrc_page_retriever/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "2"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/flow_parameter_2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/text_accumulator/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "2"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/universal_text_extractor_2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "117"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/2>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/top-n-filter/output/token_counts> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/fork-x2/input/object> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/top_n_filter> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/fork-x2/0> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/push_text_2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "597"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/connector/17>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/tag-cloud/output/html> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/write-to-file/input/data> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/tag_cloud> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/write_to_file> .
+
+<meandre://htrc.illinois.edu/flows/htrc_tagcloud_with_cleaning/instance/read-text/0/property/retry_on_http_error>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "retry_on_http_error"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .

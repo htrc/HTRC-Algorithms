@@ -1,0 +1,1989 @@
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/find4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/find>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ","^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/header>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "header"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/wrap_stream>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wrap_stream"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/46>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/xml-to-xml-with-xsl-2/output/xml_or_text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/simile-timeline-generator/input/xml> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/66>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/search-text/output/text_found> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/htrc/htrc-page-retriever/input/volume_id_list> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/replace4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              " . "^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/separator>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "separator"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ":"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/4>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/tuple-to-entity-xml/output/xml> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/stream-delimiter-filter/input/object> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "548"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/13>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/text-cleaner/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/text-cleaner/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/replace>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              " , "^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/inline_simile_xml>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "inline_simile_xml"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "8"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/find>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\n"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "CSV To Tuple"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/csv-to-tuple> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/labels> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/header> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/replace3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "525"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_password>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_password"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/14>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/fork-x2/output/object> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/opennlp-named-entity/input/tokenized_sentences> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/3>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/csv-to-tuple/output/meta_tuple> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/tuple-value-to-string/input/meta_tuple> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/find2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/40>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/date-filter/output/min_value> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/simile-timeline-generator/input/min_value> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "20"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/set>
+      a       <http://www.meandre.org/ontology/connector_set> ;
+      <http://www.meandre.org/ontology/data_connector>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/11> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/40> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/8> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/37> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/54> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/56> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/17> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/46> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/6> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/66> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/0> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/29> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/35> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/4> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/13> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/31> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/15> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/12> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/10> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/43> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/7> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/9> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/50> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/5> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/1> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/49> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/34> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/14> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/28> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/16> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/24> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/replication_method_name>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replication_method_name"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/replace4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              " ) "^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "Text Cleaner_4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/text-cleaner> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/replace3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/find3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/find2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/replace2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/find4> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/replace4> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/find> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/replace> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/6>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/read-text/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/csv-to-tuple/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "116"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/seed>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "seed"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "123"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/29>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/htrc/htrc-page-retriever/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/text-cleaner/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/retry_on_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "retry_on_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "true"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "44"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/wrap_stream>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wrap_stream"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/15>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/opennlp-named-entity/output/meta_tuple> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/tuple-to-entity-xml/input/meta_tuple> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "opennlp_sentence_tokenizer"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/opennlp-sentence-tokenizer> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/lang_code> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/find3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/simile_ref_url>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "simile_ref_url"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/connection_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "connection_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/min_value>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "min_value"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1800"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/5>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/simile-timeline-generator/output/html> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/write-to-file/input/data> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "Read Text"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/read-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/connection_timeout> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/retry_delay> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/retry_on_timeout> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/retry_on_http_error> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/read_timeout> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/max_attempts> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/labels>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "labels"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "volume_id"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "147"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/16>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/opennlp-named-entity/output/tuples> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/tuple-to-entity-xml/input/tuples> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "70"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "opennlp_sentence_detector"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/opennlp-sentence-detector> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/lang_code> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/remove_newline> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/find2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\]"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/find2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/37>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/stream-delimiter-filter/output/object> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/entity-xml-to-simile-xml/input/xml> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/56>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/htrc/htrc-page-retriever/output/volume_id> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/concatenate-text/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/17>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/entity-xml-to-simile-xml/output/max_value> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/date-filter/input/max_value> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/0>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/csv-to-tuple/output/tuples> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/tuple-value-to-string/input/tuples> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/replace3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "28"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "Strings To Java String"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/strings-to-java-string> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/separator> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "entity_xml_to_simile_xml"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/entity-xml-to-simile-xml> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "978"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/output_folder>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "output_folder"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "../simile"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/find3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "283"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/wrap_stream>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wrap_stream"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "755"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/lang_code>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "lang_code"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "en"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "stream_delimiter_filter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/stream-delimiter-filter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/advanced_filter> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "text_cleaner_2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/text-cleaner> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/find2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/replace3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/replace2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/replace4> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/replace> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/find4> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/find> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/find3> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "111"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/default_folder>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "default_folder"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "/tmp"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/find>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\["^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "push_text"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/push-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/message> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "40"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/replace2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/lang_code>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "lang_code"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "en"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "357"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/28>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/htrc/htrc-page-retriever/output/page_id> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/concatenate-text/input/text2> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/expression>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "expression"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "(?:[^|]+\\|?){1,4}"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/find4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/54>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/date-filter/output/xsl> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/xml-to-xml-with-xsl-2/input/xsl> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "191"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/entities>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "entities"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "date"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_selfsign>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_selfsign"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/2>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/text-cleaner/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/opennlp-sentence-detector/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/read_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "read_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_username>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_username"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/find2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "(.*)$"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "17"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/replace2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/43>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/concatenate-text/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/tuple-to-entity-xml/input/location> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/remove_newline>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "remove_newline"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_url>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_url"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "https://silvermaple.pti.indiana.edu:25443/oauth2/token?grant_type=client_credentials"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "655"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "275"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "297"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "99"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/append_data_to_file>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "append_data_to_file"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/retry_delay>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "retry_delay"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1000"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/1>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/opennlp-sentence-detector/output/sentences> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/opennlp-sentence-tokenizer/input/sentences> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "400"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/replace>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              " [ "^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/stream_per_volume>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "stream_per_volume"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/replace3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/find4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\."^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "319"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/count>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "count"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "10"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "24"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "190"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/>
+      a       <http://www.meandre.org/ontology/flow_component> ;
+      <http://purl.org/dc/elements/1.1/creator>
+              "admin"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://purl.org/dc/elements/1.1/date>
+              "2013-08-27T19:28:44"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      <http://purl.org/dc/elements/1.1/description>
+              "<br>"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://purl.org/dc/elements/1.1/rights>
+              "UIUC/NCSA Open Source License"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/components_instances>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/components/set> ;
+      <http://www.meandre.org/ontology/connectors>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/set> ;
+      <http://www.meandre.org/ontology/name>
+              "HTRC_OpenNLP_Date_Entities_To_Simile"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/tag>
+              "simile"^^<http://www.w3.org/2001/XMLSchema#string> , "nlp"^^<http://www.w3.org/2001/XMLSchema#string> , "entity"^^<http://www.w3.org/2001/XMLSchema#string> , "entities"^^<http://www.w3.org/2001/XMLSchema#string> , "htrc"^^<http://www.w3.org/2001/XMLSchema#string> , "timeline"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "194"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/param_name>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "param_name"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "volume_id"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "190"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/find3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "(?m)--?\\s*$\\s*"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/replace2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/number>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "number"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "3"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/50>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/fork-x2/output/object2> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/tuple-to-entity-xml/input/tokens> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "11"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "8"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/34>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/date-filter/output/max_value> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/simile-timeline-generator/input/max_value> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "108"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/24>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/push-text/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/write-to-file/input/location> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "23"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "104"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "opennlp_named_entity"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/opennlp-named-entity> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/entity_types> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/lang_code> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/wb_left_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/timeline_api_url>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "timeline_api_url"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "http://www.simile-widgets.org/timeline/api/timeline-api.js"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/find>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "^(.*)\\s"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/replace>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "|"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/35>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/entity-xml-to-simile-xml/output/min_value> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/date-filter/input/min_value> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "100"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/find4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\)"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "420"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "text_cleaner"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/text-cleaner> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/replace4> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/find4> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/replace3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/find3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/find2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/replace> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/find> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/replace2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/components/set>
+      a       <http://www.meandre.org/ontology/instance_set> ;
+      <http://www.meandre.org/ontology/executable_component_instance>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/csv-to-tuple/1> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "xml_to_xml_with_xsl_2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/xml-to-xml-with-xsl-2> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "flow_parameter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/flow-parameter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/default_value> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/wrap_stream> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/param_name> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter/property/default_value>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "default_value"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "/home/lauvil/HTRC/data/volume_id.txt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/replication_mode>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replication_mode"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/advanced_filter>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "advanced_filter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/replace4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "random_sample"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/random-sample> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/seed> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/count> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "275"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "12"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/read_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "read_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "273"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/find3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "find3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\("^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "317"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "write_to_file"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/write-to-file> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/append_data_to_file> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/append_timestamp> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/default_folder> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "tuple_to_entity_xml"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/tuple-to-entity-xml> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/entities> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/number> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/encoding> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/8>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/flow-parameter/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/read-text/input/location> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/flow_parameter> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/retry_on_http_error>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "retry_on_http_error"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "search_text"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/search-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/expression> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/wrap_stream> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/connection_timeout>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "connection_timeout"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "0"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "date_filter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/date-filter> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/max_value> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/min_value> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "206"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/replace3>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              " ( "^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/stream_delimiter_filter/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/date_filter/property/max_value>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "max_value"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1900"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/save_output_to_file>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "save_output_to_file"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/append_timestamp>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "append_timestamp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/separator>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "separator"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "\\n"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/10>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/strings-to-java-string/output/java_string> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/random-sample/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "Tuple Value To String"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/tuple-value-to-string> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/attribute> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/7>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/tuple-value-to-string/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/strings-to-java-string/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "836"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/entity_types>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "entity_types"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "date"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "366"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/lang_code>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "lang_code"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "en"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "htrc_page_retriever"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/htrc/htrc-page-retriever> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/stream_per_volume> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/connection_timeout> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/wrap_stream> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/delimiter> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_token> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_url> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/data_api_url> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/_stream_id> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_selfsign> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_password> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_username> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/read_timeout> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "266"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/encoding>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "encoding"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "UTF-8"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/49>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/text-cleaner/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/text-cleaner/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/replace2>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              " ] "^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/write_to_file/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "386"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "114"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/11>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/text-cleaner/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/search-text/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/delimiter>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "delimiter"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "|"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "text_cleaner_3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/text-cleaner> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/find4> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/find3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/replace3> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/find2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/replace2> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/find> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/replace> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/replace4> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner/property/wb_top_pix_pos> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/message>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "message"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "date_entity_simile.html"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_2/property/replace>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "concatenate_text"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/concatenate-text> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/separator> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/concatenate_text/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-named-entity/2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "120"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-detector/1/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "112"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/data_api_url>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "data_api_url"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "https://sandbox.htrc.illinois.edu:25443/data-api"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "159"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/strings-to-java-string/3/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "simile_timeline_generator"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/simile-timeline-generator> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/simile_ref_url> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/output_folder> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/_debug_level> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/save_output_to_file> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/timeline_api_url> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/timeline_css> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/inline_simile_xml> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/_ignore_errors> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/31>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/entity-xml-to-simile-xml/output/xml> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/xml-to-xml-with-xsl-2/input/xml> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/entity_xml_to_simile_xml> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/12>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/opennlp-sentence-tokenizer/output/tokenized_sentences> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/fork-x2/input/object> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/opennlp-sentence-tokenizer/0> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "442"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/attribute>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "attribute"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "volume_id"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2>
+      a       <http://www.meandre.org/ontology/instance_configuration> ;
+      <http://purl.org/dc/elements/1.1/description>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_name>
+              "fork_x2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/instance_resource>
+              <meandre://seasr.org/components/foundry/fork-x2> ;
+      <http://www.meandre.org/ontology/property_set>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/_ignore_errors> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/wb_top_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/replication_mode> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/replication_method_name> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/wb_left_pix_pos> , <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/_debug_level> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/auth_token>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "auth_token"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "a6fa7057bfa0e5a9a33411e41ca9bc69"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/xml_to_xml_with_xsl_2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "402"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/wb_top_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_top_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "32"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0/property/replace4>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "replace4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/fork_x2/property/wb_left_pix_pos>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "wb_left_pix_pos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "27"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/connector/9>
+      a       <http://www.meandre.org/ontology/data_connector_configuration> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_source>
+              <meandre://seasr.org/components/foundry/random-sample/output/text> ;
+      <http://www.meandre.org/ontology/connector_instance_data_port_target>
+              <meandre://seasr.org/components/foundry/text-cleaner/input/text> ;
+      <http://www.meandre.org/ontology/connector_instance_source>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/random_sample> ;
+      <http://www.meandre.org/ontology/connector_instance_target>
+              <meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text-cleaner/0> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/htrc_page_retriever/property/_stream_id>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_stream_id"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "99"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/push_text/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple-value-to-string/2/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/text_cleaner_3/property/_debug_level>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_debug_level"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "info"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/search_text/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/tuple_to_entity_xml/property/_ignore_errors>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "_ignore_errors"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "false"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/read-text/0/property/max_attempts>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "max_attempts"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "1"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<meandre://htrc.illinois.edu/flows/htrc_opennlp_date_entities_to_simile/instance/simile_timeline_generator/property/timeline_css>
+      a       <http://www.meandre.org/ontology/property> ;
+      <http://www.meandre.org/ontology/key>
+              "timeline_css"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://www.meandre.org/ontology/value>
+              "height: 550px; border: 1px solid #aaa"^^<http://www.w3.org/2001/XMLSchema#string> .
