@@ -219,9 +219,12 @@ public class HTRCPageRetrieverExternal extends AbstractStreamingExecutableCompon
 	
 	        		Iterable<Entry<String, String>> pages = client.getID2Page(queryStr);
 	        		if (pages != null) {
+	        			int volCount = 0;
+	        			int pageCount = 0;
 	        			for (Entry<String, String> page : pages) {
 	        				final String volumeId = page.getKey();
 	        				final String pageContent = page.getValue();
+	        				pageCount++;
 	
 	        				if (volumeId == null || pageContent == null) {
 	        					String msg = "";
@@ -246,17 +249,20 @@ public class HTRCPageRetrieverExternal extends AbstractStreamingExecutableCompon
 	        						pushStreamMarker(new StreamInitiator(streamId));
 	        					}
 	
+	        					volCount++;
 	        					prevVolumeId = volumeId;
 	        					pageId = 1;
 	        				} else
 	        					pageId++;
 	
-	        				console.fine(String.format("Pushing out vol_id: %s  page_id: %d", volumeId, pageId));
+	        				console.finer(String.format("Pushing out vol_id: %s  page_id: %d", volumeId, pageId));
 	
 	        				cc.pushDataComponentToOutput(OUT_TEXT, BasicDataTypesTools.stringToStrings(pageContent));
 	        				cc.pushDataComponentToOutput(OUT_VOLUMEID, BasicDataTypesTools.stringToStrings(volumeId));
 	        				cc.pushDataComponentToOutput(OUT_PAGEID, BasicDataTypesTools.stringToStrings(Integer.toString(pageId)));
-	        			}	            
+	        			}
+	        			
+	        			console.fine(String.format("%s: Pushed out %d volumes with a total of %d pages", epr, volCount, pageCount));
 	
 	        			// send an end stream marker for the last volume
 	        			if (wrapStream && streamPerVolume) {
