@@ -2,9 +2,11 @@ package org.seasr.meandre.components.tools.text.io;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 import org.meandre.annotations.Component;
 import org.meandre.annotations.Component.Licenses;
@@ -200,8 +202,10 @@ public class HTRCPageRetrieverExternal extends AbstractStreamingExecutableCompon
         	List<String> volumeIDsForEpr = entry.getValue();
         	console.finer(String.format("endpoint: %s with %s",epr,volumeIDsForEpr));
         	
-        	for (List<String> volumeIDs : partition(volumeIDsForEpr, maxVolsPerReq)) {	
-	        	HTRCDataClient.Builder builder = new HTRCDataClient.Builder(epr)
+        	for (List<String> volumeIDs : partition(volumeIDsForEpr, maxVolsPerReq)) {
+        		Set<String> retrievedVolIDs = new HashSet<String>();
+
+        		HTRCDataClient.Builder builder = new HTRCDataClient.Builder(epr)
 	        		.connectionTimeout(connectionTimeout).readTimeout(readTimeout);
 	
 				if (useAuthentication)
@@ -216,15 +220,12 @@ public class HTRCPageRetrieverExternal extends AbstractStreamingExecutableCompon
 	
 	        		String prevVolumeId = null;
 	        		int pageId = 1;
-	
+	        			
 	        		Iterable<Entry<String, String>> pages = client.getID2Page(queryStr);
 	        		if (pages != null) {
-	        			int volCount = 0;
-	        			int pageCount = 0;
 	        			for (Entry<String, String> page : pages) {
 	        				final String volumeId = page.getKey();
 	        				final String pageContent = page.getValue();
-	        				pageCount++;
 	
 	        				if (volumeId == null || pageContent == null) {
 	        					String msg = "";
@@ -248,22 +249,29 @@ public class HTRCPageRetrieverExternal extends AbstractStreamingExecutableCompon
 	
 	        						pushStreamMarker(new StreamInitiator(streamId));
 	        					}
-	
-	        					volCount++;
+	        					
+	        					if (prevVolumeId != null) {
+	        						retrievedVolIDs.add(prevVolumeId);
+	        						console.fine(String.format("Pushed out volume %s with %,d pages", prevVolumeId, pageId));
+	        					}
+	        					
 	        					prevVolumeId = volumeId;
 	        					pageId = 1;
 	        				} else
 	        					pageId++;
 	
-	        				console.finer(String.format("Pushing out vol_id: %s  page_id: %d", volumeId, pageId));
+	        				console.finest(String.format("Pushing out vol_id: %s  page_id: %d", volumeId, pageId));
 	
 	        				cc.pushDataComponentToOutput(OUT_TEXT, BasicDataTypesTools.stringToStrings(pageContent));
 	        				cc.pushDataComponentToOutput(OUT_VOLUMEID, BasicDataTypesTools.stringToStrings(volumeId));
 	        				cc.pushDataComponentToOutput(OUT_PAGEID, BasicDataTypesTools.stringToStrings(Integer.toString(pageId)));
 	        			}
 	        			
-	        			console.fine(String.format("%s: Pushed out %d volumes with a total of %d pages", epr, volCount, pageCount));
-	
+	        			if (prevVolumeId != null) {
+	        				retrievedVolIDs.add(prevVolumeId);
+	        				console.fine(String.format("Pushed out volume %s with %,d pages", prevVolumeId, pageId));
+	        			}	
+						
 	        			// send an end stream marker for the last volume
 	        			if (wrapStream && streamPerVolume) {
 	        				if (prevVolumeId != null)
@@ -275,6 +283,11 @@ public class HTRCPageRetrieverExternal extends AbstractStreamingExecutableCompon
 	        	finally {
 	        		client.close();
 	        	}
+	        	
+	        	// check for missing volume IDs
+	        	for (String volId : volumeIDs)
+	        		if (!retrievedVolIDs.contains(volId))
+	        			console.warning(String.format("Missing volume %s from %s", volId, epr));
         	}
         }
         
